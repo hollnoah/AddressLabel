@@ -1,12 +1,13 @@
-﻿Option Strict On
+﻿'Noah Holloway
+'RCET 2266
+'Spring 2025
+'Address Label
+
+Option Strict On
 Option Explicit On
 Option Compare Text
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
-'Noah Holloway
-'RCET 2266
-'Spring 2025
-'Address Label
 Public Class AddressLabelForm
     Sub SetDefaults()
         FirstNameTextBox.Text = ""
@@ -15,7 +16,7 @@ Public Class AddressLabelForm
         CityTextBox.Text = ""
         StateTextBox.Text = ""
         ZipCodeTextBox.Text = ""
-        DisplayLabel.Text = "Enter your details and click Display Label."
+        AddressLabelGroupbox.Text = "Enter your details and click Display Label."
         FirstNameTextBox.Focus() ' Sets cursor priority to first text box
     End Sub
 
@@ -100,4 +101,6 @@ Public Class AddressLabelForm
     Private Sub AddressLabelForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         SetDefaults() ' Initialize form with default settings
     End Sub
+
+
 End Class
